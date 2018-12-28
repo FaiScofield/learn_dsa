@@ -81,10 +81,18 @@ add_executable(eraseUnorderContainer src/eraseUnorderContainer.cpp)
 
 
 # other
-add_executable(LCS src/LongestCommonSubsequence.cpp)
-
+add_executable(LCS src/longestCommonSubsequence.cpp)
+add_executable(ruijie src/ruijie.cpp)
+add_executable(stream src/stream.cpp)
 
 # leetcode
-add_executable(70-ClimbingStairs src/leetcode/70-ClimbingStairs.cpp)
-add_executable(706-DesignHashMap src/leetcode/706-DesignHashMap.cpp)
-add_executable(778-SwimInRisingWater src/leetcode/778-SwimInRisingWater.cpp)
+add_executable(43-multiplyStrings leetcode/43-multiplyStrings.cpp)
+add_executable(70-climbingStairs leetcode/70-climbingStairs.cpp)
+add_executable(104-maxDepthOfBinaryTree leetcode/104-maxDepthOfBinaryTree.cpp)
+add_executable(557-reverseWords3 leetcode/557-reverseWords3.cpp)
+add_executable(706-designHashMap leetcode/706-designHashMap.cpp)
+add_executable(778-wwimInRisingWater leetcode/778-swimInRisingWater.cpp)
+add_executable(804-uniqueMorseCodeWords leetcode/804-uniqueMorseCodeWords.cpp)
+add_executable(844-backspaceStringCompare leetcode/844-backspaceStringCompare.cpp)
+add_executable(929-uniqueEmail leetcode/929-uniqueEmail.cpp)
+
