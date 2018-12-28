@@ -1,0 +1,85 @@
+Inserting vertex <O> ... done
+Inserting vertex <T> ... done
+Inserting vertex <X> ... done
+Inserting vertex <B> ... done
+Inserting vertex <L> ... done
+Inserting vertex <C> ... done
+Inserting vertex <M> ... done
+Inserting vertex <L> ... done
+Inserting vertex <U> ... done
+Inserting vertex <L> ... done
+Inserting vertex <S> ... done
+Inserting vertex <O> ... done
+Inserting vertex <S> ... done
+Inserting edge(5, 6) = 24 ...done
+Inserting edge(9, 6) = 0 ...done
+Inserting edge(10, 6) = 30 ...done
+Inserting edge(10, 9) = 36 ...done
+Inserting edge(3, 5) = 23 ...done
+Inserting edge(8, 1) = 4 ...done
+Inserting edge(10, 0) = 16 ...done
+Inserting edge(3, 3) = 7 ...done
+Inserting edge(5, 9) = 27 ...done
+Inserting edge(4, 11) = 16 ...done
+Inserting edge(9, 8) = 35 ...done
+Inserting edge(4, 5) = 2 ...done
+Inserting edge(1, 4) = 37 ...done
+Inserting edge(4, 6) = 25 ...done
+Inserting edge(8, 1) = 16 ...already exists
+Inserting edge(1, 1) = 8 ...done
+Inserting edge(3, 0) = 22 ...done
+Inserting edge(11, 3) = 7 ...done
+Inserting edge(10, 1) = 32 ...done
+Inserting edge(8, 9) = 10 ...done
+Inserting edge(4, 10) = 1 ...done
+Inserting edge(10, 3) = 4 ...done
+Inserting edge(7, 4) = 21 ...done
+Inserting edge(6, 1) = 23 ...done
+Inserting edge(10, 9) = 24 ...already exists
+Inserting edge(3, 3) = 35 ...already exists
+Inserting edge(5, 6) = 6 ...already exists
+Inserting edge(0, 9) = 16 ...done
+Inserting edge(3, 0) = 15 ...already exists
+Inserting edge(6, 0) = 25 ...done
+Inserting edge(5, 4) = 30 ...done
+Inserting edge(4, 6) = 0 ...already exists
+Inserting edge(0, 1) = 30 ...done
+Inserting edge(1, 7) = 4 ...done
+Inserting edge(4, 9) = 14 ...done
+11GraphMatrixIciE[0x7fff54355970]*(13, 29):
+13  29  |  A[U]	B[U]	C[U]	D[U]	E[U]	F[U]	G[U]	H[U]	I[U]	J[U]	K[U]	L[U]	M[U]	
+29  29  |  3 	5 	0 	3 	3 	2 	4 	1 	1 	5 	1 	1 	0 	| dTime fTime Parent Weight
+--------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------
+A[U] 2  |  .	30U	.	.	.	.	.	.	.	16U	.	.	.	|   -1    -1     ^   INF
+B[U] 3  |  .	8U	.	.	37U	.	.	4U	.	.	.	.	.	|   -1    -1     ^   INF
+C[U] 0  |  .	.	.	.	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+D[U] 3  |  22U	.	.	7U	.	23U	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+E[U] 5  |  .	.	.	.	.	2U	25U	.	.	14U	1U	16U	.	|   -1    -1     ^   INF
+F[U] 3  |  .	.	.	.	30U	.	24U	.	.	27U	.	.	.	|   -1    -1     ^   INF
+G[U] 2  |  25U	23U	.	.	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+H[U] 1  |  .	.	.	.	21U	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+I[U] 2  |  .	4U	.	.	.	.	.	.	.	10U	.	.	.	|   -1    -1     ^   INF
+J[U] 2  |  .	.	.	.	.	.	0U	.	35U	.	.	.	.	|   -1    -1     ^   INF
+K[U] 5  |  16U	32U	.	4U	.	.	30U	.	.	36U	.	.	.	|   -1    -1     ^   INF
+L[U] 1  |  .	.	.	7U	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+M[U] 0  |  .	.	.	.	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+
+
+11GraphMatrixIciE[0x7fff54355970]*(13, 29):
+13  29  |  A[U]	B[U]	C[U]	D[U]	E[U]	F[U]	G[U]	H[U]	I[U]	J[U]	K[U]	L[U]	M[U]	
+29  29  |  3 	5 	0 	3 	3 	2 	4 	1 	1 	5 	1 	1 	0 	| dTime fTime Parent Weight
+--------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------
+A[U] 2  |  .	30U	.	.	.	.	.	.	.	16U	.	.	.	|   -1    -1     ^   INF
+B[U] 3  |  .	8U	.	.	37U	.	.	4U	.	.	.	.	.	|   -1    -1     ^   INF
+C[U] 0  |  .	.	.	.	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+D[U] 3  |  22U	.	.	7U	.	23U	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+E[U] 5  |  .	.	.	.	.	2U	25U	.	.	14U	1U	16U	.	|   -1    -1     ^   INF
+F[U] 3  |  .	.	.	.	30U	.	24U	.	.	27U	.	.	.	|   -1    -1     ^   INF
+G[U] 2  |  25U	23U	.	.	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+H[U] 1  |  .	.	.	.	21U	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+I[U] 2  |  .	4U	.	.	.	.	.	.	.	10U	.	.	.	|   -1    -1     ^   INF
+J[U] 2  |  .	.	.	.	.	.	0U	.	35U	.	.	.	.	|   -1    -1     ^   INF
+K[U] 5  |  16U	32U	.	4U	.	.	30U	.	.	36U	.	.	.	|   -1    -1     ^   INF
+L[U] 1  |  .	.	.	7U	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+M[U] 0  |  .	.	.	.	.	.	.	.	.	.	.	.	.	|   -1    -1     ^   INF
+

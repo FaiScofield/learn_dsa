@@ -1,0 +1,53 @@
+9 vertices found.
+Inserting vertex A ... done
+Inserting vertex B ... done
+Inserting vertex C ... done
+Inserting vertex D ... done
+Inserting vertex E ... done
+Inserting vertex F ... done
+Inserting vertex G ... done
+Inserting vertex H ... done
+Inserting vertex I ... done
+Inserting edge (0, 1) = 8 ... done
+Inserting edge (0, 3) = 8 ... done
+Inserting edge (1, 0) = 8 ... done
+Inserting edge (1, 2) = 7 ... done
+Inserting edge (1, 5) = 7 ... done
+Inserting edge (2, 1) = 7 ... done
+Inserting edge (2, 4) = 3 ... done
+Inserting edge (3, 0) = 8 ... done
+Inserting edge (3, 4) = 5 ... done
+Inserting edge (3, 6) = 9 ... done
+Inserting edge (3, 7) = 7 ... done
+Inserting edge (4, 2) = 3 ... done
+Inserting edge (4, 3) = 5 ... done
+Inserting edge (4, 5) = 6 ... done
+Inserting edge (4, 7) = 8 ... done
+Inserting edge (5, 1) = 7 ... done
+Inserting edge (5, 4) = 6 ... done
+Inserting edge (5, 7) = 5 ... done
+Inserting edge (5, 8) = 5 ... done
+Inserting edge (6, 3) = 9 ... done
+Inserting edge (6, 7) = 6 ... done
+Inserting edge (7, 3) = 7 ... done
+Inserting edge (7, 4) = 8 ... done
+Inserting edge (7, 5) = 5 ... done
+Inserting edge (7, 6) = 6 ... done
+Inserting edge (7, 8) = 4 ... done
+Inserting edge (8, 5) = 5 ... done
+Inserting edge (8, 7) = 4 ... done
+
+11GraphMatrixIciE[0x7fff7e454740]*(9, 28):
+  9  28 |  A[U]	B[U]	C[U]	D[U]	E[U]	F[U]	G[U]	H[U]	I[U]	
+ 28  28 |  2 	3 	2 	4 	4 	4 	2 	5 	2 	| dTime fTime Parent Weight
+--------+------------------------------------------------------------------------------------------------------+--------------------------
+A[U] 2  |  .	8U	.	8U	.	.	.	.	.	|   -1    -1     ^    INF
+B[U] 3  |  8U	.	7U	.	.	7U	.	.	.	|   -1    -1     ^    INF
+C[U] 2  |  .	7U	.	.	3U	.	.	.	.	|   -1    -1     ^    INF
+D[U] 4  |  8U	.	.	.	5U	.	9U	7U	.	|   -1    -1     ^    INF
+E[U] 4  |  .	.	3U	5U	.	6U	.	8U	.	|   -1    -1     ^    INF
+F[U] 4  |  .	7U	.	.	6U	.	.	5U	5U	|   -1    -1     ^    INF
+G[U] 2  |  .	.	.	9U	.	.	.	6U	.	|   -1    -1     ^    INF
+H[U] 5  |  .	.	.	7U	8U	5U	6U	.	4U	|   -1    -1     ^    INF
+I[U] 2  |  .	.	.	.	.	5U	.	4U	.	|   -1    -1     ^    INF
+
