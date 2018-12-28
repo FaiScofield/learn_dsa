@@ -61,6 +61,7 @@ add_library(dsa    SHARED
 )
 
 add_subdirectory(dsa)
+add_subdirectory(leetcode)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
