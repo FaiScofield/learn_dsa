@@ -30,10 +30,10 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 
 add_library(dsa_core SHARED
-    dsa/core/_share/Double.h
-    dsa/core/_share/Half.h
+#    dsa/core/_share/Double.h
+#    dsa/core/_share/Half.h
 
-    dsa/core/Vector/Vector.hpp
+    dsa/core/Vector/Vector.cpp
 
     dsa/core/UniPrint/UniPrint.cc
 )

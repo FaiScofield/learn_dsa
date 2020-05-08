@@ -1,10 +1,10 @@
-#ifndef DECREASE_H
-#define DECREASE_H
+#ifndef DECREASE_HPP
+#define DECREASE_HPP
 
-#include "../List/List.h"
-#include "../Vector/Vector.h"
+#include "../List.h"
+#include "../Vector.h"
 
-
+namespace dsa {
 // 函数对象：递减一个T类对象
 template <typename T> struct Decrease
 {
@@ -22,6 +22,6 @@ template <typename T> void decrease(Vector<T>& V)
 {
     V.traverse(Decrease<T>());  // 以Decrease<T>()为基本操作进行遍历
 }
+}
 
-
-#endif // DECREASE_H
+#endif // DECREASE_HPP

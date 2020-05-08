@@ -6,14 +6,13 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ******************************************************************************************/
 
-#ifndef PRINT_H
-#define PRINT_H
+#ifndef UNI_PRINT_HPP
+#define UNI_PRINT_HPP
 
-#include "../_share/util.h"
-#include "print_int_array.h"
-#include <iostream>
-#include "../Vector/Vector.hpp"
 #include "../List/List.hpp"
+//#include "../Utility.h"
+#include "../Vector/Vector.hpp"
+#include "print_int_array.h"
 //#include "../Queue/Queue.h"
 //#include "../Stack/Stack.h"
 //#include "../BinTree/BinTree.h" //二叉树
@@ -35,15 +34,25 @@
 //#include "../PQ_LeftHeap/PQ_LeftHeap.h" //基于左式堆实现的优先级队列
 //#include "../huffman/huffChar.h" //Huffman超字符
 
+//namespace dsa
+//{
+//class UniPrint;
+//}
+
+
+
+namespace dsa
+{
+
 using std::cout;
 using std::endl;
 
 class UniPrint;
 
-#define print(x) UniPrint::p(x)
-#define PRINT(x) UniPrint::p(x)
+#define print(x) dsa::UniPrint::p(x)
+#define PRINT(x) dsa::UniPrint::p(x)
 
-#define ROOT    0
+#define ROOT 0
 #define L_CHILD 1
 #define R_CHILD (-1 * L_CHILD)
 // static void print(char* x) { printf(" %s", x ? x : "<NULL>"); }         // 字符串特别处理
@@ -58,12 +67,12 @@ public:
     static void p(double e) { printf("%.2f", e); }
     static void p(char e) { printf("%c", (31 < e) && (e < 128) ? e : '$'); }
     static void p(const char* s) { s ? printf("%s", s) : printf("<NULL>"); }
-//    static void p(VStatus);  // 图顶点的状态
-//    static void p(EType);    // 图边的类型
+    //    static void p(VStatus);  // 图顶点的状态
+    //    static void p(EType);    // 图边的类型
 
-//    static void p(HuffChar&);    // Huffman（超）字符
-//    template <typename K, typename V>
-//    static void p(Entry<K, V>&);  // Entry
+    //    static void p(HuffChar&);    // Huffman（超）字符
+    //    template <typename K, typename V>
+    //    static void p(Entry<K, V>&);  // Entry
 
     template <typename T>
     static void p(const Vector<T>& V);
@@ -71,43 +80,43 @@ public:
     template <typename T>
     static void p(const List<T>& L);
 
-//    template <typename T>
-//    static void p(const Stack<T>& S);
+    //    template <typename T>
+    //    static void p(const Stack<T>& S);
 
-//    template <typename T>
-//    static void p(const Queue<T>& Q);
+    //    template <typename T>
+    //    static void p(const Queue<T>& Q);
 
-//    template <typename T>
-//    static void p(const BinNode<T>& node);
+    //    template <typename T>
+    //    static void p(const BinNode<T>& node);
 
-//    template <typename T>
-//    static void p(const BinTree<T>& bt);
+    //    template <typename T>
+    //    static void p(const BinTree<T>& bt);
 
-//    template <typename T>
-//    static void p(BST<T>&);
+    //    template <typename T>
+    //    static void p(BST<T>&);
 
-//    template <typename T>
-//    static void p(AVL<T>&);
+    //    template <typename T>
+    //    static void p(AVL<T>&);
 
-//    template <typename T>
-//    static void p(Splay<T>&);
+    //    template <typename T>
+    //    static void p(Splay<T>&);
 
-//    template <typename T>
-//    static void p(BTree<T>&);
+    //    template <typename T>
+    //    static void p(BTree<T>&);
 
-//    template <typename T>
-//    static void p(RedBlack<T>&);
+    //    template <typename T>
+    //    static void p(RedBlack<T>&);
 
-//    template <typename T> static void p(Quadlist<T>&); // Quadlist
-//    template <typename K, typename V> static void p(Skiplist<K, V>&); // Skiplist
-//    template <typename K, typename V>
-//    static void p(Hashtable<K, V>&);  // Hashtable
+    //    template <typename T> static void p(Quadlist<T>&); // Quadlist
+    //    template <typename K, typename V> static void p(Skiplist<K, V>&); // Skiplist
+    //    template <typename K, typename V>
+    //    static void p(Hashtable<K, V>&);  // Hashtable
     //    template <typename T> static void p(PQ_List<T>&); // PQ_List
     //    template <typename T> static void p(PQ_ComplHeap<T>&); // PQ_ComplHeap
     //    template <typename T> static void p(PQ_LeftHeap<T>&); // PQ_LeftHeap
 
-//    template <typename Tv, typename Te>
-//    static void p(GraphMatrix<Tv, Te>& s);
+    //    template <typename Tv, typename Te>
+    //    static void p(GraphMatrix<Tv, Te>& s);
     //    template <typename T> static void p(T& x); // 向量、列表等支持traverse()遍历操作的线性结构
     //    template <typename T> static void p(T* s) // 所有指针
     //    { s ? p(*s) : print("<NULL>"); } // 统一转为引用
@@ -118,7 +127,7 @@ public:
 // template <class T> static void print(const T& x) { UniPrint::p(x); } // for Stack
 
 
-//void UniPrint::p(VStatus e)
+// void UniPrint::p(VStatus e)
 //{
 //    switch (e) {
 //    case UNDISCOVERED:
@@ -135,7 +144,7 @@ public:
 //        break;
 //    }
 //}
-//void UniPrint::p(EType e)
+// void UniPrint::p(EType e)
 //{
 //    switch (e) {
 //    case UNDETERMINED:
@@ -184,8 +193,8 @@ void UniPrint::p(const List<T>& L)
 
 
 //// BinTree节点
-//template <typename T>
-//void UniPrint::p(const BinNode<T>& node)
+// template <typename T>
+// void UniPrint::p(const BinNode<T>& node)
 //{
 //    p(node.data);  // 数值
 //    /*
@@ -250,8 +259,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * 二叉树输出打印
 // ******************************************************************************************/
-//template <typename T>
-//void UniPrint::p(const BinTree<T>& bt)
+// template <typename T>
+// void UniPrint::p(const BinTree<T>& bt)
 //{
 //    if (!bt.size())
 //        return;
@@ -266,8 +275,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * 基于BinTree实现的BST
 // ******************************************************************************************/
-//template <typename T>
-//void UniPrint::p(BST<T>& bt)
+// template <typename T>
+// void UniPrint::p(BST<T>& bt)
 //{  // 引用
 //    if (!bt.size())
 //        return;
@@ -283,8 +292,8 @@ void UniPrint::p(const List<T>& L)
 // * 基于BST实现的AVL
 // * 其中调用的BinNode的打印例程，可以显示BF状态
 // ******************************************************************************************/
-//template <typename T>
-//void UniPrint::p(AVL<T>& avl)
+// template <typename T>
+// void UniPrint::p(AVL<T>& avl)
 //{                                                                  // 引用
 //    printf("%s[%p]*%d:\n", typeid(avl).name(), &avl, avl.size());  // 基本信息
 //    Bitmap* branchType = new Bitmap;                 // 记录当前节点祖先的方向
@@ -297,8 +306,8 @@ void UniPrint::p(const List<T>& L)
 // * 基于BST实现的RedBlack
 // * 其中调用的BinNode的打印例程，可以显示BF状态
 // ******************************************************************************************/
-//template <typename T>
-//void UniPrint::p(RedBlack<T>& rb)
+// template <typename T>
+// void UniPrint::p(RedBlack<T>& rb)
 //{                                                               // 引用
 //    printf("%s[%p]*%d:\n", typeid(rb).name(), &rb, rb.size());  // 基本信息
 //    Bitmap* branchType = new Bitmap;                            // 记录当前节点祖先的方向
@@ -311,8 +320,8 @@ void UniPrint::p(const List<T>& L)
 // * 基于BST实现的Splay
 // * 鉴于Splay不必设置bf之类的附加标识，其打印例程与BST完全一致
 // ******************************************************************************************/
-//template <typename T>
-//void UniPrint::p(Splay<T>& bt)
+// template <typename T>
+// void UniPrint::p(Splay<T>& bt)
 //{                                                               // 引用
 //    printf("%s[%p]*%d:\n", typeid(bt).name(), &bt, bt.size());  // 基本信息
 //    Bitmap* branchType = new Bitmap;                            // 记录当前节点祖先的方向
@@ -324,8 +333,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * BTree打印（入口）
 // ******************************************************************************************/
-//template <typename T>
-//void UniPrint::p(BTree<T>& bt)
+// template <typename T>
+// void UniPrint::p(BTree<T>& bt)
 //{                                                               // 引用
 //    printf("%s[%p]*%d:\n", typeid(bt).name(), &bt, bt.size());  // 基本信息
 //    Bitmap* leftmosts = new Bitmap;                             // 记录当前节点祖先的方向
@@ -340,8 +349,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * Entry
 // ******************************************************************************************/
-//template <typename K, typename V>
-//void UniPrint::p(Entry<K, V>& e)
+// template <typename K, typename V>
+// void UniPrint::p(Entry<K, V>& e)
 //{
 //    printf("-<");
 //    print(e.key);
@@ -354,8 +363,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * Hashtable
 // ******************************************************************************************/
-//template <typename K, typename V>
-//void UniPrint::p(Hashtable<K, V>& ht)
+// template <typename K, typename V>
+// void UniPrint::p(Hashtable<K, V>& ht)
 //{
 //    printf("%s[%p]*%d/%d:\n", typeid(ht).name(), &ht, ht.N, ht.M);  // 基本信息
 //    for (int i = 0; i < ht.M; i++)                                  // 输出桶编号
@@ -384,8 +393,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * 图Graph
 // ******************************************************************************************/
-//template <typename Tv, typename Te>  // 顶点类型、边类型
-//void UniPrint::p(GraphMatrix<Tv, Te>& g)
+// template <typename Tv, typename Te>  // 顶点类型、边类型
+// void UniPrint::p(GraphMatrix<Tv, Te>& g)
 //{
 //    int inD = 0, outD = 0;
 //    for (int i = 0; i < g.n; i++)
@@ -455,8 +464,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * 二叉树各种派生类的统一打印
 // ******************************************************************************************/
-//template <typename T>
-//static void printBinTree(BinNodePosi(T) bt, int depth, int type, Bitmap* bType)
+// template <typename T>
+// static void printBinTree(BinNodePosi(T) bt, int depth, int type, Bitmap* bType)
 //{
 //    if (!bt)
 //        return;
@@ -493,8 +502,8 @@ void UniPrint::p(const List<T>& L)
 ///******************************************************************************************
 // * BTree打印（递归）
 // ******************************************************************************************/
-//template <typename T>
-//static void printBTree(BTNodePosi(T) bt, int depth, bool isLeftmost, bool isRightmost,
+// template <typename T>
+// static void printBTree(BTNodePosi(T) bt, int depth, bool isLeftmost, bool isRightmost,
 //                       Bitmap* leftmosts, Bitmap* rightmosts)
 //{
 //    if (!bt)
@@ -532,5 +541,9 @@ void UniPrint::p(const List<T>& L)
 //    }
 //}
 
+}  // namespace dsa
 
-#endif
+
+
+
+#endif  // UNI_PRINT_HPP

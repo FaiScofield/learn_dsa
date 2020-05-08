@@ -1,8 +1,11 @@
 #ifndef CHECKORDER_H
 #define CHECKORDER_H
 
-#include "../Vector/Vector.h"
-#include "../List/List.h"
+#include "../Vector.h"
+#include "../List.h"
+
+namespace dsa {
+
 
 // 函数对象：判断一个T类对象是否局部有序
 template <typename T> struct CheckOrder {
@@ -45,4 +48,5 @@ template <typename T> void checkOrder(List<T> & L) {
         printf("Sorted\n");
 }
 
+}
 #endif // CHECKORDER_H

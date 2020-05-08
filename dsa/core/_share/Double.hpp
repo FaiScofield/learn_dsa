@@ -1,9 +1,10 @@
-#ifndef DOUBLE_H
-#define DOUBLE_H
+#ifndef DOUBLE_HPP
+#define DOUBLE_HPP
 
 #include "../List/List.hpp"
 #include "../Vector/Vector.hpp"
 
+namespace dsa {
 // 函数对象：倍增一个T类对象
 template <typename T>
 struct Double {
@@ -24,5 +25,6 @@ void double_fun(List<T>& L)
     L.traverse(Double<T>());  // 以Double<T>()为基本操作进行遍历
 }
 
+}
 
-#endif  // DOUBLE_H
+#endif  // DOUBLE_HPP

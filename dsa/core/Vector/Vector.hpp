@@ -9,28 +9,16 @@
 #ifndef VECTOR_HPP
 #define VECTOR_HPP
 
+#include <algorithm>
+#include "../Utility.h"
 //#include "../fibonacci/fibonacci.h"  // 引入Fib数列类
 //#include "../PQ/PQ_ComplHeap.h"
-#include <algorithm>
-#include <assert.h>
-#include <iostream>
-#include <stdlib.h>
 
-#define DO_NOTHING
+namespace dsa {
+
 #define DEFAULT_CAPACITY 5  // 默认的初始容量（实际应用中可设置为更大）
+
 typedef int Rank;           // 秩
-
-enum OperateType {
-    SEARCH_BIN  = 0,
-    SEARCH_FIB  = 1,
-
-    SORT_BUBBLE = 2,
-    SORT_SELECT = 3,
-    SORT_MERGE  = 4,
-    SORT_QUICK  = 5,
-    SORT_HEAP   = 6
-};
-
 
 // 向量模板类
 template <typename T>
@@ -361,7 +349,7 @@ protected:
     // 选择排序算法. O(n^2)
     void selectionSort(Rank lo, Rank hi)
     {
-        printf("\tSelectionSort [%d, %d)\n", lo, hi);
+//        printf("\tSelectionSort [%d, %d)\n", lo, hi);
         while (lo < --hi)  // 将[hi]与[lo, hi]中的最大者交换
             std::swap(_elem[max(lo, hi)], _elem[hi]);
     }
@@ -690,5 +678,5 @@ int Vector<T>::deduplicate() {
 }
 */
 
-
+}
 #endif  // VECTOR_HPP
