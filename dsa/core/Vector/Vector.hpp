@@ -24,6 +24,11 @@ typedef int Rank;           // 秩
 template <typename T>
 class Vector
 {
+protected:
+    Rank _size;     // 规模
+    int _capacity;  // 容量
+    T* _elem;       // 数据区
+
 public:
     ///* 构造&析构 *///
     ~Vector() { delete[] _elem; }
@@ -47,7 +52,8 @@ public:
     Vector(const T* A, Rank n) { copyFrom(A, 0, n); }
     // 数组区间复制
     Vector(const T* A, Rank lo, Rank hi) { copyFrom(A, lo, hi); }
-    // 向量整体复制 TODO to check
+    // 向量整体复制 
+	// TODO: to check
     Vector(const Vector<T>& V) { copyFrom(V._elem, 0, V._size); }
     // 向量区间复制
     Vector(const Vector<T>& V, Rank lo, Rank hi) { copyFrom(V._elem, lo, hi); }
@@ -222,9 +228,6 @@ public:
     }
 
 protected:
-    Rank _size;     // 规模
-    int _capacity;  // 容量
-    T* _elem;       // 数据区
 
     // 以数组区间A[lo, hi)为蓝本复制向量
     void copyFrom(const T* A, Rank lo, Rank hi)

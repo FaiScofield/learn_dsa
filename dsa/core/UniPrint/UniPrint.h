@@ -186,7 +186,7 @@ void UniPrint::p(const List<T>& L)
 {
     if (L.empty())
         return;
-    for (auto p = L.first(); p != L.last(); p = p->succ)
+    for (auto p = L.first(); p != L.last(); p = p->next)
         cout << p->data << " <--> ";
     cout << L.last()->data << endl;
 }

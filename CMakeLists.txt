@@ -34,6 +34,7 @@ add_library(dsa_core SHARED
 #    dsa/core/_share/Half.h
 
     dsa/core/Vector/Vector.cpp
+    dsa/core/List/List.cpp
 
     dsa/core/UniPrint/UniPrint.cc
 )

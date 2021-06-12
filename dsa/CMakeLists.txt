@@ -19,7 +19,8 @@ add_executable(dsa-test_vector test/test_Vector.cpp)
 target_link_libraries(dsa-test_vector dsa_core)
 
 ## List
-#add_executable(dsa-test_list src/List/test_List.cpp)
+add_executable(dsa-test_list test/test_List.cpp)
+target_link_libraries(dsa-test_list dsa_core)
 
 ### Stack
 #add_executable(dsa-test_stack src/Stack/test_Stack.cpp)
